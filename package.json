@@ -1,0 +1,15 @@
+{
+  "name": "cronapi",
+  "main": "server.js",
+  "dependencies": {
+    "asserts": "^4.0.2",
+    "body-parser": "^1.14.2",
+    "express": "^4.13.3",
+    "jsonwebtoken": "^5.4.1",
+    "moment": "^2.10.6",
+    "mongodb": "^2.0.52",
+    "mongoose": "^4.3.3",
+    "morgan": "^1.6.1",
+    "mysql": "^2.10.0"
+  }
+}
