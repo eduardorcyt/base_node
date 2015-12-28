@@ -13,7 +13,8 @@ var mdbUrl = process.env.MONGOURL || 'mongodb://' + dbHostname + ':' + dbPort + 
 module.exports = function(callback) {
   //if already we have a connection, don't connect to database again
   if (connectionInstance) {
-    callback(connectionInstance);
+       console.log('Conectado a mongodb');
+        callback(connectionInstance);
     return;
   }
 
@@ -21,6 +22,8 @@ module.exports = function(callback) {
   db.open(function(error, databaseConnection) {
     if (error) throw new Error(error);
     connectionInstance = databaseConnection;
-    callback(databaseConnection);
+    console.log('Conectado a mongodb');
+    callback(connectionInstance);
+    return;
   });
 };
