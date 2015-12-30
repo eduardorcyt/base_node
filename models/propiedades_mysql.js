@@ -3,6 +3,9 @@ var mysqlConnection = require('../adapters/mysql');
 module.exports = {
         //get many items
         findMany : function(fields, where, options, callback) {
+            mysqlConnection.query(function(err, rows, fields) {
+                
+            });
             mongoDbConnection(function(err,db) { 
                 if(err) throw new Error(err);
                 collection = db.collection('propiedades_activas_node');
